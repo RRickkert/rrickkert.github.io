@@ -18,6 +18,64 @@ h6 {
     color      : #bfb199;
 }
 
+.navbar {}
+
+ul {
+    list-style      : none;
+    overflow        : hidden;
+    background-color: #121212;
+    position        : fixed;
+    top             : 0;
+    z-index         : 1002;
+    width           : 100%;
+    height          : 50px;
+    font-size       : 100%;
+    right           : 0;
+    margin          : 0;
+    padding         : 0;
+    box-shadow      : inset 0 -1px 0 1px #262626;
+    text-align      : center;
+    vertical-align  : middle;
+}
+
+li {
+    display       : inline-block;
+    height        : 100%;
+    line-height   : 100%;
+    vertical-align: middle;
+}
+
+li a:before {
+    content       : "";
+    display       : inline-block;
+    height        : 100%;
+    vertical-align: middle;
+}
+
+li a {
+    display        : inline-block;
+    color          : #bfb199;
+    padding-left   : 14px;
+    padding-right  : 14px;
+    text-decoration: none;
+    font-size      : 1.14em;
+    font-family    : 'PT Serif', serif;
+    font-weight    : bold;
+    text-transform : uppercase;
+    cursor         : pointer;
+    box-shadow     : inset 0 -4px 2px -2px #bfb19900;
+    border-bottom  : 1px;
+    border-color   : red;
+    transition     : all .1s ease;
+}
+/* Change the link color to #111 (black) on hover */
+
+li a:hover {
+    color     : #BCA785;
+    font-size : 1.3em;
+    box-shadow: inset 0 -4px 2px -2px #B7945B;
+}
+
 .info-card h4 {
     color      : #bfb199;
     font-weight: bold;
@@ -64,6 +122,21 @@ h6 {
     margin-top  : 40px;
 }
 
+.info-card.projects h4 {
+    font-size: 1.5em;
+}
+
+.info-card.projects h5 {
+    font-size: 1em;
+}
+
+.info-card.projects h6 {
+    font-size   : 1em;
+    margin-left : 20px;
+    margin-right: 20px;
+    margin-top  : 40px;
+}
+
 .info-card {
     width           : 100%;
     background-color: #101217;
@@ -83,15 +156,19 @@ h6 {
 
 .info-card .content {
     margin-top: 0;
-    transition: margin-top .6s;
+    transition: margin-top .4s;
 }
 
 .info-card .content:hover {
-    transition: margin-top .6s;
+    transition: margin-top .4s;
 }
 
 .info-card.about-me .content:hover {
     margin-top: -65%;
+}
+
+.info-card.projects .content:hover {
+    margin-top: -56.2%;
 }
 
 .info-card.skills .content:hover {
@@ -116,6 +193,16 @@ h6 {
     border-radius      : 50%;
     display            : inline-block;
     vertical-align     : middle;
+    background-color   : #101217;
+}
+
+.info-card.projects .content .icon {
+    width      : 10%;
+    padding-top: 10%;
+}
+
+.info-card.projects .content .line {
+    width: 45%;
 }
 
 .info-card .content .line-with-icon {
@@ -123,6 +210,19 @@ h6 {
     height    : 50px;
     margin-top: 20px;
     font-size : 0;
+}
+
+.info-card.projects .content .line-with-icon {
+    width     : 100%;
+    height    : 50px;
+    margin-top: -32px;
+    font-size : 0;
+    transition: margin-top .4s;
+}
+
+.info-card.projects .content:hover .line-with-icon {
+    margin-top: 20px;
+    transition: margin-top .4s;
 }
 
 .info-card .content,
@@ -143,4 +243,9 @@ h6 {
 .skills img {
     width     : 50%;
     margin-top: 5%;
+}
+
+.projects img {
+    width : 100%;
+    height: auto;
 }

@@ -23,6 +23,22 @@
     padding-top: calc(2/1*100%);
 }
 
+.aspect-ratio.\34 x3:before {
+    padding-top: calc(3/4*100%);
+}
+
+.aspect-ratio.\33 x4:before {
+    padding-top: calc(4/3*100%);
+}
+
+.aspect-ratio.\36 x5:before {
+    padding-top: calc(5/6*100%);
+}
+
+.aspect-ratio.\35 x6:before {
+    padding-top: calc(6/5*100%);
+}
+
 .aspect-ratio.\32 0x21:before {
     padding-top: calc(21/20*100%);
 }
