@@ -16,28 +16,52 @@ h6 {
     font-weight: normal;
     font-family: 'PT Serif', serif;
     color      : #bfb199;
-    margin-top : 30;
 }
 
 .info-card h4 {
     color      : #bfb199;
-    font-size  : 1.5em;
     font-weight: bold;
 }
 
 .info-card h5 {
-    color    : #c4a46a;
-    font-size: 1em;
+    color: #c4a46a;
 }
 
 .info-card h6 {
-    color       : #bfb199;
+    color      : #bfb199;
+    line-height: normal;
+    text-align : left;
+}
+
+.info-card.about-me h4 {
+    font-size: 1.5em;
+}
+
+.info-card.about-me h5 {
+    font-size : 1em;
+    margin-top: 30;
+}
+
+.info-card.about-me h6 {
     font-size   : .9em;
-    line-height : normal;
     margin-left : 20px;
     margin-right: 20px;
     margin-top  : 50px;
-    text-align  : left;
+}
+
+.info-card.skills h4 {
+    font-size: 1.3em;
+}
+
+.info-card.skills h5 {
+    font-size: 1em;
+}
+
+.info-card.skills h6 {
+    font-size   : .9em;
+    margin-left : 20px;
+    margin-right: 20px;
+    margin-top  : 40px;
 }
 
 .info-card {
@@ -59,12 +83,19 @@ h6 {
 
 .info-card .content {
     margin-top: 0;
-    transition: margin-top .7s;
+    transition: margin-top .6s;
 }
 
 .info-card .content:hover {
-    margin-top: -68%;
-    transition: margin-top .7s;
+    transition: margin-top .6s;
+}
+
+.info-card.about-me .content:hover {
+    margin-top: -65%;
+}
+
+.info-card.skills .content:hover {
+    margin-top: -55.2%;
 }
 
 .info-card .content .line {
@@ -107,4 +138,9 @@ h6 {
     width     : 60%;
     margin-top: 5%;
     clip-path : circle(50% at center);
+}
+
+.skills img {
+    width     : 50%;
+    margin-top: 5%;
 }
