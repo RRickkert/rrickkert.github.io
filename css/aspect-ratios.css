@@ -1,0 +1,40 @@
+.aspect-ratio {
+    position: relative;
+}
+
+.aspect-ratio:before {
+    content: "";
+    display: block;
+}
+
+.aspect-ratio.\31 6x9:before {
+    padding-top: calc(9/16*100%);
+}
+
+.aspect-ratio.\31 x1:before {
+    padding-top: calc(1/1*100%);
+}
+
+.aspect-ratio.\32 x1:before {
+    padding-top: calc(1/2*100%);
+}
+
+.aspect-ratio.\31 x2:before {
+    padding-top: calc(2/1*100%);
+}
+
+.aspect-ratio.\32 0x21:before {
+    padding-top: calc(21/20*100%);
+}
+
+.aspect-ratio.\31 0x11:before {
+    padding-top: calc(11/10*100%);
+}
+
+.aspect-ratio.\31 0x11:before {
+    padding-top: calc(11/10*100%);
+}
+
+.aspect-ratio.\32 0x11:before {
+    padding-top: calc(11/20*100%);
+}

@@ -1,0 +1,73 @@
+html {
+    background-color: #0a0a0c;
+}
+
+body {
+    color: white;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    line-height: 10px;
+    font-weight: normal;
+    font-family: 'PT Serif', serif;
+    color      : #bfb199;
+    margin-top : 15px;
+}
+
+.info-card h4 {
+    color      : #bfb199;
+    font-size  : 1.6em;
+    font-weight: bold;
+}
+
+.info-card h5 {
+    color    : #c4a46a;
+    font-size: 1em;
+}
+
+.info-card {
+    width           : 100%;
+    background-color: #101217;
+    border-color    : #32281f;
+    border-width    : 2px;
+    border-style    : solid;
+    margin-bottom   : 40px;
+}
+
+.info-card-invisible {
+    margin-bottom: 10px;
+}
+
+.info-card .mask {
+    clip-path: inset(0);
+}
+
+.info-card .content {
+    margin-top: 0;
+    transition: margin-top 1s;
+}
+
+.info-card .content:hover {
+    margin-top: -75%;
+    transition: margin-top 1s;
+}
+
+.info-card .content,
+.info-card .mask {
+    position: absolute;
+    top     : 0;
+    left    : 0;
+    bottom  : 0;
+    right   : 0;
+}
+
+.about-me img {
+    width     : 60%;
+    margin-top: 10%;
+    clip-path : circle(50% at center);
+}
