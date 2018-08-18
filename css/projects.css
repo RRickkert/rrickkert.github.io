@@ -17,7 +17,7 @@
         grid-template-areas  : "a a a c" "a a a d" "b b b d" "b b b e";
     }
 }
-@media only screen and (max-width: 320px) and (orientation: portrait) {
+@media only screen and (max-width: 600px) and (orientation: portrait) {
     .projects-container {
         margin-left          : 5vw;
         margin-right         : 5vw;
