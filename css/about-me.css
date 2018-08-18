@@ -16,7 +16,7 @@
         grid-template-areas  : ". a a ." "b b c c" "d d e e" "f f g g";
     }
 }
-@media only screen and (max-width: 320px) and (orientation: portrait) {
+@media only screen and (max-width: 600px) and (orientation: portrait) {
     .about-me-container {
         margin-left          : 5vw;
         margin-right         : 5vw;
