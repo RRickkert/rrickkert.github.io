@@ -1,0 +1,229 @@
+<html>
+
+<head>
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=PT+Serif:400,700">
+
+    <link rel="stylesheet"
+          href="https://necolas.github.io/normalize.css/8.0.0/normalize.css">
+    <link rel="stylesheet"
+          href="css/main.css">
+    <link rel="stylesheet"
+          href="css/default.css">
+    <link rel="stylesheet"
+          href="css/aspect-ratios.css">
+    <style>
+        .wrapper {
+            display: grid;
+            justify-content: space-between;
+            margin-left: 15vw;
+            margin-right: 15vw;
+            grid-gap: 3vw;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-areas: ". a ." "b a c" "b d c" "e d f" "e g f" ". g .";
+        }
+
+        /*.wrapper>div {
+            margin: 0px;
+        }*/
+
+        @media screen and (max-width:1024px) {
+            .wrapper {
+                margin-left: 10vw;
+                margin-right: 10vw;
+                grid-template-columns: repeat(4, 1fr);
+                grid-template-areas: ". a a ." "b b c c" "d d e e" "f f g g";
+            }
+        }
+
+        @media only screen and (max-width: 480px) and (orientation: portrait) {
+            .wrapper {
+                margin-left: 5vw;
+                margin-right: 5vw;
+                grid-template-columns: repeat(1, 1fr);
+                grid-template-areas: "a" "b" "c" "d" "e" "f";
+            }
+        }
+
+        .info-card {
+            margin-bottom: 0vw;
+        }
+
+        .info-card:last-child {
+            margin-bottom: 0vw;
+        }
+
+        .info-card#a {
+            grid-area: a;
+        }
+
+        .info-card#b {
+            grid-area: b;
+        }
+
+        .info-card#c {
+            grid-area: c;
+        }
+
+        .info-card#d {
+            grid-area: d;
+        }
+
+        .info-card#e {
+            grid-area: e;
+        }
+
+        .info-card#f {
+            grid-area: f;
+        }
+
+        .info-card#g {
+            grid-area: g;
+            align-self: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div id="a"
+             class="about-me aspect-ratio 10x11 info-card">
+            <div class="mask">
+                <div class="content"
+                     style="text-align: center;">
+                    <img src="images/personal/rick-avatarz.jpg">
+                    <div class="line-with-icon">
+                        <span class="line"></span>
+                        <span class="icon"
+                              style="background-image:url('images/icons/programmer.png');background-position: 50% 100%;"></span>
+                        <span class="line"></span>
+                    </div>
+                    <h5>CLIMBING FOREST NAME</h5>
+                    <h4>CLIMBING INSTRUCTOR</h4>
+                    <h6>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h6>
+                </div>
+            </div>
+        </div>
+
+        <div id="b"
+             class="about-me aspect-ratio 10x11 info-card">
+            <div class="mask">
+                <div class="content"
+                     style="text-align: center;">
+                    <img src="images/personal/rick-avatarz.jpg">
+                    <div class="line-with-icon">
+                        <span class="line"></span>
+                        <span class="icon"
+                              style="background-image:url('images/icons/programmer.png');background-position: 50% 100%;"></span>
+                        <span class="line"></span>
+                    </div>
+                    <h5>CLIMBING FOREST NAME</h5>
+                    <h4>CLIMBING INSTRUCTOR</h4>
+                    <h6>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h6>
+                </div>
+            </div>
+        </div>
+
+        <div id="c"
+             class="about-me aspect-ratio 10x11 info-card">
+            <div class="mask">
+                <div class="content"
+                     style="text-align: center;">
+                    <img src="images/personal/rick-avatarz.jpg">
+                    <div class="line-with-icon">
+                        <span class="line"></span>
+                        <span class="icon"
+                              style="background-image:url('images/icons/programmer.png');background-position: 50% 100%;"></span>
+                        <span class="line"></span>
+                    </div>
+                    <h5>CLIMBING FOREST NAME</h5>
+                    <h4>CLIMBING INSTRUCTOR</h4>
+                    <h6>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h6>
+                </div>
+            </div>
+        </div>
+
+        <div id="d"
+             class="about-me aspect-ratio 10x11 info-card">
+            <div class="mask">
+                <div class="content"
+                     style="text-align: center;">
+                    <img src="images/personal/rick-avatarz.jpg">
+                    <div class="line-with-icon">
+                        <span class="line"></span>
+                        <span class="icon"
+                              style="background-image:url('images/icons/programmer.png');background-position: 50% 100%;"></span>
+                        <span class="line"></span>
+                    </div>
+                    <h5>CLIMBING FOREST NAME</h5>
+                    <h4>CLIMBING INSTRUCTOR</h4>
+                    <h6>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h6>
+                </div>
+            </div>
+        </div>
+
+        <div id="e"
+             class="about-me aspect-ratio 10x11 info-card">
+            <div class="mask">
+                <div class="content"
+                     style="text-align: center;">
+                    <img src="images/personal/rick-avatarz.jpg">
+                    <div class="line-with-icon">
+                        <span class="line"></span>
+                        <span class="icon"
+                              style="background-image:url('images/icons/programmer.png');background-position: 50% 100%;"></span>
+                        <span class="line"></span>
+                    </div>
+                    <h5>CLIMBING FOREST NAME</h5>
+                    <h4>CLIMBING INSTRUCTOR</h4>
+                    <h6>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h6>
+                </div>
+            </div>
+        </div>
+
+        <div id="f"
+             class="about-me aspect-ratio 10x11 info-card">
+            <div class="mask">
+                <div class="content"
+                     style="text-align: center;">
+                    <img src="images/personal/rick-avatarz.jpg">
+                    <div class="line-with-icon">
+                        <span class="line"></span>
+                        <span class="icon"
+                              style="background-image:url('images/icons/programmer.png');background-position: 50% 100%;"></span>
+                        <span class="line"></span>
+                    </div>
+                    <h5>CLIMBING FOREST NAME</h5>
+                    <h4>CLIMBING INSTRUCTOR</h4>
+                    <h6>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h6>
+                </div>
+            </div>
+        </div>
+
+        <div id="g"
+             class="about-me aspect-ratio 10x11 info-card">
+            <div class="mask">
+                <div class="content"
+                     style="text-align: center;">
+                    <img src="images/personal/rick-avatarz.jpg">
+                    <div class="line-with-icon">
+                        <span class="line"></span>
+                        <span class="icon"
+                              style="background-image:url('images/icons/programmer.png');background-position: 50% 100%;"></span>
+                        <span class="line"></span>
+                    </div>
+                    <h5>CLIMBING FOREST NAME</h5>
+                    <h4>CLIMBING INSTRUCTOR</h4>
+                    <h6>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h6>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
