@@ -21,20 +21,27 @@
           href="css/skills.css">
     <link rel="stylesheet"
           href="css/projects.css">
+    <link rel="stylesheet"
+          href="css/navbar.css">
 </head>
 
 
 <body>
-    <div style="height:50px; width:100%; background-color:#121212; border-bottom: 1px solid #262626; ">
+    <div class="navbar">
         <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About me</a></li>
-            <li><a href="#">Skills</a></li>
-            <li><a href="#">Projects</a></li>
+            <li><a class="btn active"
+                   href="#about-me">Home</a></li>
+            <li><a class="btn"
+                   href="#about-me">About me</a></li>
+            <li><a class="btn"
+                   href="#skills">Skills</a></li>
+            <li><a class="btn"
+                   href="#projects">Projects</a></li>
         </ul>
     </div>
 
-    <div style="height:100px; text-align: center; margin-top: 100px;">
+    <div id="about-me"
+         style="height:100px; text-align: center; margin-top: 100px;">
         <div style="width:19vw; height:2px; background-image: linear-gradient(to left, transparent 0%, transparent 7%, #584D38CC 7%, #584D38CC 60%, #584D3800 100%); margin-top: 20px;display:inline-block;"></div>
         <h1 style="vertical-align: middle; display:inline-block;">ABOUT ME</h1>
         <div style="width:19vw; height:2px; background-image: linear-gradient(to right, transparent 0%, transparent 7%, #584D38CC 7%, #584D38CC 60%, #584D3800 100%); margin-top: 20px;display:inline-block;"></div>
@@ -170,7 +177,8 @@
     </div>
     </div>
 
-    <div style="height:100px; text-align: center; margin-top: 100px;">
+    <div id="skills"
+         style="height:100px; text-align: center; margin-top: 100px;">
         <div style="width:19vw; height:2px; background-image: linear-gradient(to left, transparent 0%, transparent 7%, #584D38CC 7%, #584D38CC 60%, #584D3800 100%); margin-top: 20px;display:inline-block;"></div>
         <h1 style="vertical-align: middle; display:inline-block;">SKILLS</h1>
         <div style="width:19vw; height:2px; background-image: linear-gradient(to right, transparent 0%, transparent 7%, #584D38CC 7%, #584D38CC 60%, #584D3800 100%); margin-top: 20px;display:inline-block;"></div>
@@ -321,7 +329,8 @@
         </div>
     </div>
 
-    <div style="height:100px; text-align: center; margin-top: 100px;">
+    <div id="projects"
+         style="height:100px; text-align: center; margin-top: 100px;">
         <div style="width:19vw; height:2px; background-image: linear-gradient(to left, transparent 0%, transparent 7%, #584D38CC 7%, #584D38CC 60%, #584D3800 100%); margin-top: 20px;display:inline-block;"></div>
         <h1 style="vertical-align: middle; display:inline-block;">PROJECTS</h1>
         <div style="width:19vw; height:2px; background-image: linear-gradient(to right, transparent 0%, transparent 7%, #584D38CC 7%, #584D38CC 60%, #584D3800 100%); margin-top: 20px;display:inline-block;"></div>
@@ -414,6 +423,9 @@
             </div class="mask">
         </div>
     </div>
+    <div style="height: 400px;"></div>
 </body>
+
+<script src="js/navigationbar.js"></script>
 
 </html>
