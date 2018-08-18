@@ -1,6 +1,9 @@
 <html>
 
 <head>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1">
+
     <link rel="stylesheet"
           href="https://fonts.googleapis.com/css?family=PT+Serif:400,700">
 
@@ -27,7 +30,7 @@
             margin: 0px;
         }*/
 
-        @media screen and (max-width:1024px) {
+        @media only screen and (max-width:1024px) and (orientation: portrait) {
             .wrapper {
                 margin-left: 10vw;
                 margin-right: 10vw;
@@ -41,7 +44,7 @@
                 margin-left: 5vw;
                 margin-right: 5vw;
                 grid-template-columns: repeat(1, 1fr);
-                grid-template-areas: "a" "b" "c" "d" "e" "f";
+                grid-template-areas: "a" "b" "c" "d" "e" "f" "g";
             }
         }
 
