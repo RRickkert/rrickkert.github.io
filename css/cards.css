@@ -76,3 +76,19 @@
 .card .text-container h4 {
   font-size: 1.25vw;
 }
+@media only screen and (max-width: 1024px) and (orientation: portrait) {
+  .card .text-container h5 {
+    font-size: 1.8vw;
+  }
+  .card .text-container h4 {
+    font-size: 2.5vw;
+  }
+}
+@media only screen and (max-width: 600px) and (orientation: portrait) {
+  .card .text-container h5 {
+    font-size: 4vw;
+  }
+  .card .text-container h4 {
+    font-size: 5vw;
+  }
+}
