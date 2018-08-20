@@ -61,3 +61,16 @@
     font-size: 4vw;
   }
 }
+.card.skills .description-area h6 {
+  font-size: 0.7vw;
+}
+@media only screen and (max-width: 1024px) and (orientation: portrait) {
+  .card.skills .description-area h6 {
+    font-size: 1.25vw;
+  }
+}
+@media only screen and (max-width: 600px) and (orientation: portrait) {
+  .card.skills .description-area h6 {
+    font-size: 2.1vw;
+  }
+}
