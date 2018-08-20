@@ -1,0 +1,63 @@
+.card.skills {
+  padding-top: 110%;
+}
+.card.skills .content {
+  transform: translate(0, 0);
+  transition: transform 0.4s ease-in-out;
+}
+.card.skills .content .img-area {
+  width: 100%;
+  height: 57.95454545%;
+  display: flex;
+  justify-content: center;
+}
+.card.skills .content img {
+  object-fit: contain;
+  width: 75%;
+  height: auto;
+}
+.card.skills .content .line-area {
+  margin-top: 0%;
+  height: 13.63636364%;
+  transition: margin-top 0.4s ease-in-out;
+}
+.card.skills .content .circle {
+  width: 15%;
+  padding-top: 15%;
+}
+.card.skills .content .text-container {
+  height: 28.40909091%;
+}
+.card.skills:hover .content {
+  transform: translate(0, -57.95454545%);
+  transition: transform 0.4s ease-in-out;
+}
+.card.skills:hover .content .line-area {
+  margin-top: 3%;
+  transition: margin-top 0.4s ease-in-out;
+}
+.card.skills .content .img-area img {
+  transform: scale(0.75, 0.75);
+}
+.card.skills .text-container h5 {
+  font-size: 0.75vw;
+}
+.card.skills .text-container h4 {
+  font-size: 1.3vw;
+}
+@media only screen and (max-width: 1024px) and (orientation: portrait) {
+  .card.skills .text-container h5 {
+    font-size: 1.5vw;
+  }
+  .card.skills .text-container h4 {
+    font-size: 2.1vw;
+  }
+}
+@media only screen and (max-width: 600px) and (orientation: portrait) {
+  .card.skills .text-container h5 {
+    font-size: 2.5vw;
+  }
+  .card.skills .text-container h4 {
+    font-size: 4vw;
+  }
+}

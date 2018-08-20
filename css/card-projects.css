@@ -1,5 +1,5 @@
 .card.projects {
-  padding-top: 110%;
+  padding-top: 83.33333333%;
 }
 .card.projects .content {
   transform: translate(0, 0);
@@ -7,11 +7,8 @@
 }
 .card.projects .content .img-area {
   width: 100%;
-  height: 51.13636364%;
+  height: 67.5%;
   display: flex;
-  justify-content: center;
-}
-.card.projects .content .helper {
   justify-content: center;
 }
 .card.projects .content img {
@@ -20,22 +17,44 @@
   height: auto;
 }
 .card.projects .content .line-area {
-  margin-top: -7.5%;
-  height: 13.63636364%;
+  margin-top: -5%;
+  height: 12%;
   transition: margin-top 0.4s ease-in-out;
 }
 .card.projects .content .circle {
-  width: 15%;
-  padding-top: 15%;
+  width: 10%;
+  padding-top: 10%;
 }
 .card.projects .content .text-container {
-  height: 42.04545455%;
+  height: 26.5%;
 }
 .card.projects:hover .content {
-  transform: translate(0, -51.13636364%);
+  transform: translate(0, -67.5%);
   transition: transform 0.4s ease-in-out;
 }
 .card.projects:hover .content .line-area {
-  margin-top: 3%;
+  margin-top: 2%;
   transition: margin-top 0.4s ease-in-out;
+}
+.card.projects .text-container h5 {
+  font-size: 0.9vw;
+}
+.card.projects .text-container h4 {
+  font-size: 1.5vw;
+}
+@media only screen and (max-width: 1024px) and (orientation: portrait) {
+  .card.projects .text-container h5 {
+    font-size: 1.25vw;
+  }
+  .card.projects .text-container h4 {
+    font-size: 2.2vw;
+  }
+}
+@media only screen and (max-width: 600px) and (orientation: portrait) {
+  .card.projects .text-container h5 {
+    font-size: 2.5vw;
+  }
+  .card.projects .text-container h4 {
+    font-size: 4.5vw;
+  }
 }

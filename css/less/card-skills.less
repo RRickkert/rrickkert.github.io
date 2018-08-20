@@ -1,27 +1,26 @@
-// out: ../card-about-me.css
+// out: ../card-skills.css
 @aspect-ratio-w: 10;
 @aspect-ratio-h: 11;
 @aspect-ratio-img-w: 1;
-@aspect-ratio-img-h: 1;
+@aspect-ratio-img-h: 0.85;
 @circle-size: 15%; // of width
-@class-name: about-me;
+@class-name: skills;
 @transition-type: ease-in-out;
 @circle-should-overlap: 0;
-@img-width: 70%;
+@img-width: 75%;
 @img-height: auto;
 @import "card-aspect-ratio.less";
 
 .card.@{class-name} {
     & .content {
         & .img-area img {
-            transform: scale(0.85, 0.85);
-            clip-path: circle(50% at center);
+            transform: scale(0.75, 0.75);
         }
     }
 
     & .text-container {
         & h5 {
-            font-size: 1vw;
+            font-size: 0.75vw;
         }
 
         & h4 {
@@ -29,20 +28,20 @@
         }
         @media only screen and (max-width:1024px) and (orientation: portrait) {
             & h5 {
-                font-size: 1.8vw;
+                font-size: 1.5vw;
             }
 
             & h4 {
-                font-size: 2.5vw;
+                font-size: 2.1vw;
             }
         }
         @media only screen and (max-width: 600px) and (orientation: portrait) {
             & h5 {
-                font-size: 4vw;
+                font-size: 2.5vw;
             }
 
             & h4 {
-                font-size: 5vw;
+                font-size: 4vw;
             }
         }
     }

@@ -161,13 +161,3 @@ h6 {
     bottom  : 0;
     right   : 0;
 }
-
-.skills img {
-    width     : 50%;
-    margin-top: 5%;
-}
-
-.projects img {
-    width : 100%;
-    height: auto;
-}
