@@ -68,7 +68,7 @@
         font-size: 85%;
     }
 }
-@media only screen and (max-width: 335px) and (orientation: portrait) {
+@media only screen and (max-width: 600px) and (orientation: portrait) {
     .navbar {
         height: 25px;
     }
