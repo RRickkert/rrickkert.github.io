@@ -8,71 +8,66 @@ h3,
 h4,
 h5,
 h6 {
-    line-height: 10px;
     font-weight: normal;
     font-family: 'PT Serif', serif;
     color      : #bfb199;
 }
 
-.info-card h4 {
+.card h4 {
     color      : #bfb199;
     font-weight: bold;
 }
 
-.info-card h5 {
+.card h5 {
     color: #c4a46a;
 }
 
-.info-card h6 {
+.card h6 {
     color      : #bfb199;
     line-height: normal;
     text-align : left;
 }
 
-.info-card.about-me h4 {
+.card.about-me h4 {
     font-size: 1.5em;
 }
 
-.info-card.about-me h5 {
-    font-size : 1em;
-    margin-top: 30;
+.card.about-me h5 {
+    font-size: 1em;
 }
 
-.info-card.about-me h6 {
+.card.about-me h6 {
     font-size   : .9em;
     margin-left : 20px;
     margin-right: 20px;
-    margin-top  : 50px;
 }
 
-.info-card.skills h4 {
+.card.skills h4 {
     font-size: 1.3em;
 }
 
-.info-card.skills h5 {
+.card.skills h5 {
     font-size: 1em;
 }
 
-.info-card.skills h6 {
+.card.skills h6 {
     font-size   : .9em;
     margin-left : 20px;
     margin-right: 20px;
-    margin-top  : 40px;
 }
 
-.info-card.projects h4 {
+.card.projects h4 {
     font-size: 1.5em;
 }
 
-.info-card.projects h5 {
+.card.projects h5 {
     font-size: 1em;
 }
 
-.info-card.projects h6 {
+.card.projects h6 {
     font-size   : 1em;
     margin-left : 20px;
     margin-right: 20px;
-    margin-top  : 40px;
 }
 
 .info-card {
@@ -165,12 +160,6 @@ h6 {
     left    : 0;
     bottom  : 0;
     right   : 0;
-}
-
-.about-me img {
-    width     : 60%;
-    margin-top: 5%;
-    clip-path : circle(50% at center);
 }
 
 .skills img {

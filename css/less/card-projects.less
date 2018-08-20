@@ -1,0 +1,18 @@
+// out: ../card-projects.css
+@aspect-ratio-w: 10;
+@aspect-ratio-h: 11;
+@aspect-ratio-img-w: 16;
+@aspect-ratio-img-h: 9;
+@circle-size: 15%; // of width
+@class-name: projects;
+@transition-type: ease-in-out;
+@circle-should-overlap: 1;
+@img-width: 100%;
+@img-height: auto;
+@import "card-aspect-ratio.less";
+
+.card.@{class-name} {
+    & .content {
+        & .img-area img {}
+    }
+}

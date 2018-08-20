@@ -1,0 +1,49 @@
+@circle-height-percentage: (@aspect-ratio-w / @aspect-ratio-h) * @circle-size;
+@image-area-height: (@aspect-ratio-w / @aspect-ratio-h) * ((@aspect-ratio-img-h*@img-width) / (@aspect-ratio-img-w*100%)) * 100%;
+
+.card.@{class-name} {
+    padding-top: @aspect-ratio-h / @aspect-ratio-w * 100%;
+
+    & .content {
+        transform: translate(0, 0);
+        transition: transform 0.4s @transition-type;
+
+        & .img-area {
+            width: 100%;
+            height: @image-area-height;
+            display: flex;
+            justify-content: center;
+        }
+
+        & img {
+            object-fit: contain;
+            width: @img-width;
+            height: @img-height;
+        }
+
+        & .line-area {
+            margin-top: (-@circle-size/2)*@circle-should-overlap;
+            height: @circle-height-percentage;
+            transition: margin-top 0.4s @transition-type;
+        }
+
+        & .circle {
+            width: @circle-size;
+            padding-top: @circle-size;
+        }
+
+        & .text-container {
+            height: 100% - @image-area-height - (@circle-height-percentage/2*(2-@circle-should-overlap));
+        }
+    }
+
+    &:hover .content {
+        transform: translate(0, -@image-area-height);
+        transition: transform 0.4s @transition-type;
+
+        & .line-area {
+            margin-top: @circle-size/5;
+            transition: margin-top 0.4s @transition-type;
+        }
+    }
+}

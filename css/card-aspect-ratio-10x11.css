@@ -1,0 +1,41 @@
+.card.aspect-ratio-10x11 {
+  padding-top: 110%;
+}
+.card.aspect-ratio-10x11 .content {
+  transform: translate(0, 0);
+  transition: transform 0.4s ease-in-out;
+}
+.card.aspect-ratio-10x11 .content .img-area {
+  width: 100%;
+  height: 511363.63636364%;
+}
+.card.aspect-ratio-10x11 .content .helper {
+  height: 100%;
+  display: inline-block;
+  vertical-align: middle;
+}
+.card.aspect-ratio-10x11 .content img {
+  vertical-align: middle;
+  width: 100%;
+  height: 100%;
+}
+.card.aspect-ratio-10x11 .content .line-area {
+  margin-top: 0%;
+  height: 13.63636364%;
+  transition: margin-top 0.4s ease-in-out;
+}
+.card.aspect-ratio-10x11 .content .circle {
+  width: 15%;
+  padding-top: 15%;
+}
+.card.aspect-ratio-10x11 .content .text-container {
+  height: -511277.27272727%;
+}
+.card.aspect-ratio-10x11:hover .content {
+  transform: translate(0, -511363.63636364);
+  transition: transform 0.4s ease-in-out;
+}
+.card.aspect-ratio-10x11:hover .content .line-area {
+  margin-top: 3%;
+  transition: margin-top 0.4s ease-in-out;
+}
