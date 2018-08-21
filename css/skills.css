@@ -7,6 +7,19 @@
     grid-gap             : 3vw;
     grid-template-columns: repeat(4, 1fr);
     grid-template-areas  : "a b c d" "e f g h";
+    transition           : margin 200ms;
+}
+@media only screen and (max-width:1500px) {
+    .skills-container {
+        margin-left : 10vw;
+        margin-right: 10vw;
+    }
+}
+@media only screen and (max-width:1366px) {
+    .skills-container {
+        margin-left : 5vw;
+        margin-right: 5vw;
+    }
 }
 @media only screen and (max-width:1024px) and (orientation: portrait) {
     .skills-container {
@@ -16,7 +29,7 @@
         grid-template-areas  : "a a b b c c" "d d e e f f" ". g g h h .";
     }
 }
-@media only screen and (max-width: 600px) and (orientation: portrait) {
+@media only screen and (max-width: 414px) and (orientation: portrait) {
     .skills-container {
         margin-left          : 5vw;
         margin-right         : 5vw;

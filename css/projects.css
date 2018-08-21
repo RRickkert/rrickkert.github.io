@@ -9,6 +9,19 @@
     grid-template-areas  : "a a b b" "c d d e";*/
     grid-template-columns: repeat(4, 1fr);
     grid-template-areas  : "a a b b" "c c d d" ". e e .";
+    transition           : margin 200ms;
+}
+@media only screen and (max-width:1500px) {
+    .projects-container {
+        margin-left : 10vw;
+        margin-right: 10vw;
+    }
+}
+@media only screen and (max-width:1366px) {
+    .projects-container {
+        margin-left : 5vw;
+        margin-right: 5vw;
+    }
 }
 @media only screen and (max-width:1024px) and (orientation: portrait) {
     .projects-container {
@@ -21,7 +34,7 @@
         grid-template-areas  : "a" "b" "c" "d" "e";
     }
 }
-@media only screen and (max-width: 600px) and (orientation: portrait) {
+@media only screen and (max-width: 414px) and (orientation: portrait) {
     .projects-container {
         margin-left          : 5vw;
         margin-right         : 5vw;
