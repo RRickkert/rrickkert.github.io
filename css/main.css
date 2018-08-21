@@ -13,6 +13,10 @@ h6 {
     color      : #bfb199;
 }
 
+h2 {
+    font-size: 2em;
+}
+
 .card h4 {
     color      : #bfb199;
     font-weight: bold;
