@@ -9,7 +9,6 @@
     grid-template-areas  : "a a b b" "c d d e";*/
     grid-template-columns: repeat(4, 1fr);
     grid-template-areas  : "a a b b" "c c d d" ". e e .";
-    transition           : margin 200ms;
 }
 @media only screen and (max-width:1500px) {
     .projects-container {

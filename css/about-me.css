@@ -7,7 +7,6 @@
     grid-gap             : 3vw;
     grid-template-columns: repeat(3, 1fr);
     grid-template-areas  : ". a ." "b a c" "b d c" "e d f" "e g f" ". g .";
-    transition           : margin 200ms;
 }
 @media only screen and (max-width:1500px) {
     .about-me-container {

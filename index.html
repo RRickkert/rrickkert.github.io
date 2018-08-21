@@ -31,6 +31,35 @@
           href="css/card-skills.css">
     <link rel="stylesheet"
           href="css/card-projects.css">
+    <style>
+        .background {
+            position: absolute;
+            opacity: 0.2;
+            background-repeat: no-repeat;
+            background-color: #0a0a0c;
+            width: 100%;
+            height: 50%;
+            top: auto;
+            transform: translate(0, -50%);
+            background-size: cover;
+            z-index: -100;
+        }
+
+        #about-me .background {
+            background-image: linear-gradient(to bottom, #0a0a0cFF 0%, #0a0a0c00 45%, #0a0a0c00 45%, #0a0a0cFF 100%), url(/images/backgrounds/forest-background.jpg);
+            opacity: 0.04;
+        }
+
+        #skills .background {
+            background-image: linear-gradient(to bottom, #0a0a0cFF 0%, #0a0a0c00 45%, #0a0a0c00 45%, #0a0a0cFF 100%), url(/images/projects/shotgo/1.jpg);
+            opacity: 0.14;
+        }
+
+        #projects .background {
+            background-image: linear-gradient(to bottom, #0a0a0cFF 0%, #0a0a0c00 45%, #0a0a0c00 45%, #0a0a0cFF 100%), url(/images/projects/tetracer/1.jpg);
+            opacity: 0.14;
+        }
+    </style>
 </head>
 
 <body>
@@ -62,6 +91,7 @@
 
     <div id="about-me"
          style="height:100px; text-align: center; margin-top: 100px;">
+        <div class="background"></div>
         <div style="width:19vw; height:2px; background-image: linear-gradient(to left, transparent 0%, transparent 7%, #584D38CC 7%, #584D38CC 60%, #584D3800 100%); margin-top: 20px;display:inline-block;"></div>
         <h1 style="vertical-align: middle; display:inline-block;">ABOUT ME</h1>
         <div style="width:19vw; height:2px; background-image: linear-gradient(to right, transparent 0%, transparent 7%, #584D38CC 7%, #584D38CC 60%, #584D3800 100%); margin-top: 20px;display:inline-block;"></div>
@@ -234,6 +264,7 @@
 
     <div id="skills"
          style="height:100px; text-align: center; margin-top: 100px;">
+        <div class="background"></div>
         <div style="width:19vw; height:2px; background-image: linear-gradient(to left, transparent 0%, transparent 7%, #584D38CC 7%, #584D38CC 60%, #584D3800 100%); margin-top: 20px;display:inline-block;"></div>
         <h1 style="vertical-align: middle; display:inline-block;">SKILLS</h1>
         <div style="width:19vw; height:2px; background-image: linear-gradient(to right, transparent 0%, transparent 7%, #584D38CC 7%, #584D38CC 60%, #584D3800 100%); margin-top: 20px;display:inline-block;"></div>
@@ -420,6 +451,7 @@
 
     <div id="projects"
          style="height:100px; text-align: center; margin-top: 100px;">
+        <div class="background"></div>
         <div style="width:19vw; height:2px; background-image: linear-gradient(to left, transparent 0%, transparent 7%, #584D38CC 7%, #584D38CC 60%, #584D3800 100%); margin-top: 20px;display:inline-block;"></div>
         <h1 style="vertical-align: middle; display:inline-block;">PROJECTS</h1>
         <div style="width:19vw; height:2px; background-image: linear-gradient(to right, transparent 0%, transparent 7%, #584D38CC 7%, #584D38CC 60%, #584D3800 100%); margin-top: 20px;display:inline-block;"></div>
