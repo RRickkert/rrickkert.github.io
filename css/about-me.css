@@ -37,30 +37,30 @@
     }
 }
 
-.about-me-container > div#a {
+.about-me-container > div.a {
     grid-area: a;
 }
 
-.about-me-container > div#b {
+.about-me-container > div.b {
     grid-area: b;
 }
 
-.about-me-container > div#c {
+.about-me-container > div.c {
     grid-area: c;
 }
 
-.about-me-container > div#d {
+.about-me-container > div.d {
     grid-area: d;
 }
 
-.about-me-container > div#e {
+.about-me-container > div.e {
     grid-area: e;
 }
 
-.about-me-container > div#f {
+.about-me-container > div.f {
     grid-area: f;
 }
 
-.about-me-container > div#g {
+.about-me-container > div.g {
     grid-area: g;
 }

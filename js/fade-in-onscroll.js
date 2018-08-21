@@ -63,8 +63,8 @@ var showIfInView = function() {
 var reduceMargin = function() {
 	var func = function(i) {
 		$(this).css({
-			marginLeft: lerp($(window).width() * 0.20, $(window).width() * 0.05, 2 * (1 - $(window).width() / screen.width)),
-			marginRight: lerp($(window).width() * 0.20, $(window).width() * 0.05, 2 * (1 - $(window).width() / screen.width))
+			marginLeft: lerp($(window).width() * 0.15, $(window).width() * 0.05, 2 * (1 - $(window).width() / screen.width)),
+			marginRight: lerp($(window).width() * 0.15, $(window).width() * 0.05, 2 * (1 - $(window).width() / screen.width))
 		});
 	};
 	$('.about-me-container').each(func);

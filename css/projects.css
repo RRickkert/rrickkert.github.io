@@ -42,22 +42,22 @@
     }
 }
 
-.projects-container > div#a {
+.projects-container > div.a {
     grid-area: a;
 }
 
-.projects-container > div#b {
+.projects-container > div.b {
     grid-area: b;
 }
 
-.projects-container > div#c {
+.projects-container > div.c {
     grid-area: c;
 }
 
-.projects-container > div#d {
+.projects-container > div.d {
     grid-area: d;
 }
 
-.projects-container > div#e {
+.projects-container > div.e {
     grid-area: e;
 }
