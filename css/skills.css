@@ -1,3 +1,6 @@
+/* converter --> https://autoprefixer.github.io/ */
+/* original */
+/*
 .skills-container {
     display              : grid;
     justify-content      : space-between;
@@ -67,4 +70,246 @@
 
 .skills-container > div.h {
     grid-area: h;
+}
+*/
+.skills-container {
+    display              : -ms-grid;
+    display              : grid;
+    -webkit-box-pack     : justify;
+    -ms-flex-pack        : justify;
+    justify-content      : space-between;
+    margin-left          : 15vw;
+    margin-right         : 15vw;
+    text-align           : center;
+    grid-gap             : 3vw;
+    -ms-grid-columns     : 1fr 3vw 1fr 3vw 1fr 3vw 1fr;
+    grid-template-columns: repeat(4, 1fr);
+    -ms-grid-rows        : auto 3vw auto 3vw auto 3vw auto;
+    grid-template-areas  : "a b c d" "e f g h" "i j k l";
+}
+@media only screen and (max-width:1500px) {
+    .skills-container {
+        margin-left : 10vw;
+        margin-right: 10vw;
+    }
+}
+@media only screen and (max-width:1366px) {
+    .skills-container {
+        margin-left : 5vw;
+        margin-right: 5vw;
+    }
+}
+@media only screen and (max-width:1024px) and (orientation: portrait) {
+    .skills-container {
+        margin-left          : 10vw;
+        margin-right         : 10vw;
+        -ms-grid-columns     : 1fr 3vw 1fr 3vw 1fr;
+        -ms-grid-rows        : auto 3vw auto 3vw auto 3vw auto;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas  : "a b c" "d e f" "g h i" "j k l";
+    }
+}
+@media only screen and (max-width: 414px) and (orientation: portrait) {
+    .skills-container {
+        margin-left          : 5vw;
+        margin-right         : 5vw;
+        -ms-grid-columns     : 1fr 3vw 1fr;
+        -ms-grid-rows        : auto 3vw auto 3vw auto 3vw auto 3vw auto 3vw auto;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas  : "a b" "c d" "e f" "g h" "i j" "k l";
+    }
+}
+
+.skills-container > div.a {
+    -ms-grid-row   : 1;
+    -ms-grid-column: 1;
+    grid-area      : a;
+}
+
+.skills-container > div.b {
+    -ms-grid-row   : 1;
+    -ms-grid-column: 3;
+    grid-area      : b;
+}
+
+.skills-container > div.c {
+    -ms-grid-row   : 1;
+    -ms-grid-column: 5;
+    grid-area      : c;
+}
+
+.skills-container > div.d {
+    -ms-grid-row   : 1;
+    -ms-grid-column: 7;
+    grid-area      : d;
+}
+
+.skills-container > div.e {
+    -ms-grid-row   : 3;
+    -ms-grid-column: 1;
+    grid-area      : e;
+}
+
+.skills-container > div.f {
+    -ms-grid-row   : 3;
+    -ms-grid-column: 3;
+    grid-area      : f;
+}
+
+.skills-container > div.g {
+    -ms-grid-row   : 3;
+    -ms-grid-column: 5;
+    grid-area      : g;
+}
+
+.skills-container > div.h {
+    -ms-grid-row   : 3;
+    -ms-grid-column: 7;
+    grid-area      : h;
+}
+
+.skills-container > div.i {
+    -ms-grid-row   : 5;
+    -ms-grid-column: 1;
+    grid-area      : i;
+}
+
+.skills-container > div.j {
+    -ms-grid-row   : 5;
+    -ms-grid-column: 3;
+    grid-area      : j;
+}
+
+.skills-container > div.k {
+    -ms-grid-row   : 5;
+    -ms-grid-column: 5;
+    grid-area      : k;
+}
+
+.skills-container > div.l {
+    -ms-grid-row   : 5;
+    -ms-grid-column: 7;
+    grid-area      : l;
+}
+@media only screen and (max-width:1024px) and (orientation: portrait) {
+    .skills-container > div.a {
+        -ms-grid-row   : 1;
+        -ms-grid-column: 1;
+    }
+
+    .skills-container > div.b {
+        -ms-grid-row   : 1;
+        -ms-grid-column: 3;
+    }
+
+    .skills-container > div.c {
+        -ms-grid-row   : 1;
+        -ms-grid-column: 5;
+    }
+
+    .skills-container > div.d {
+        -ms-grid-row   : 3;
+        -ms-grid-column: 1;
+    }
+
+    .skills-container > div.e {
+        -ms-grid-row   : 3;
+        -ms-grid-column: 3;
+    }
+
+    .skills-container > div.f {
+        -ms-grid-row   : 3;
+        -ms-grid-column: 5;
+    }
+
+    .skills-container > div.g {
+        -ms-grid-row   : 5;
+        -ms-grid-column: 1;
+    }
+
+    .skills-container > div.h {
+        -ms-grid-row   : 5;
+        -ms-grid-column: 3;
+    }
+
+    .skills-container > div.i {
+        -ms-grid-row   : 5;
+        -ms-grid-column: 5;
+    }
+
+    .skills-container > div.j {
+        -ms-grid-row   : 7;
+        -ms-grid-column: 1;
+    }
+
+    .skills-container > div.k {
+        -ms-grid-row   : 7;
+        -ms-grid-column: 3;
+    }
+
+    .skills-container > div.l {
+        -ms-grid-row   : 7;
+        -ms-grid-column: 5;
+    }
+}
+@media only screen and (max-width: 414px) and (orientation: portrait) {
+    .skills-container > div.a {
+        -ms-grid-row   : 1;
+        -ms-grid-column: 1;
+    }
+
+    .skills-container > div.b {
+        -ms-grid-row   : 1;
+        -ms-grid-column: 3;
+    }
+
+    .skills-container > div.c {
+        -ms-grid-row   : 3;
+        -ms-grid-column: 1;
+    }
+
+    .skills-container > div.d {
+        -ms-grid-row   : 3;
+        -ms-grid-column: 3;
+    }
+
+    .skills-container > div.e {
+        -ms-grid-row   : 5;
+        -ms-grid-column: 1;
+    }
+
+    .skills-container > div.f {
+        -ms-grid-row   : 5;
+        -ms-grid-column: 3;
+    }
+
+    .skills-container > div.g {
+        -ms-grid-row   : 7;
+        -ms-grid-column: 1;
+    }
+
+    .skills-container > div.h {
+        -ms-grid-row   : 7;
+        -ms-grid-column: 3;
+    }
+
+    .skills-container > div.i {
+        -ms-grid-row   : 9;
+        -ms-grid-column: 1;
+    }
+
+    .skills-container > div.j {
+        -ms-grid-row   : 9;
+        -ms-grid-column: 3;
+    }
+
+    .skills-container > div.k {
+        -ms-grid-row   : 11;
+        -ms-grid-column: 1;
+    }
+
+    .skills-container > div.l {
+        -ms-grid-row   : 11;
+        -ms-grid-column: 3;
+    }
 }

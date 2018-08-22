@@ -13,8 +13,7 @@ var initialize = function() {
 		var bottom_of_window = $(window).scrollTop() + $(window).height();
 
 		var cardInfo = {
-			'obj': $(this),
-			'top': $(this).position().top
+			'obj': $(this)
 		}
 		/* If the object is completely visible in the window, fade it it */
 		if (bottom_of_window > bottom_of_object) {
@@ -33,8 +32,8 @@ var showIfInView = function() {
 
 	for (var i = fadedInCards.length - 1; i >= 0; i--) {
 		var cardInfo = fadedInCards[i];
-		var bottom_of_object = cardInfo.top;
-		var top_of_object = cardInfo.top;
+		var bottom_of_object = cardInfo.obj.position().top;
+		var top_of_object = bottom_of_object;
 		var bottom_of_window = $(window).scrollTop() + $(window).height();
 
 		if (bottom_of_window < top_of_object) {
@@ -47,8 +46,8 @@ var showIfInView = function() {
 
 	for (var i = fadedOutCards.length - 1; i >= 0; i--) {
 		var cardInfo = fadedOutCards[i];
-		var bottom_of_object = cardInfo.top;
-		var top_of_object = cardInfo.top;
+		var bottom_of_object = cardInfo.obj.position().top;
+		var top_of_object = bottom_of_object;
 		var bottom_of_window = $(window).scrollTop() + $(window).height();
 
 		if (bottom_of_window > top_of_object) {
@@ -72,11 +71,62 @@ var reduceMargin = function() {
 	$('.projects-container').each(func);
 };
 
+
+
+
+var _ = function(obj) {
+	if (obj instanceof _) return obj;
+	if (!(this instanceof _)) return new _(obj);
+	this._wrapped = obj;
+};
+_.throttle = function(func, wait, options) {
+	var timeout, context, args, result;
+	var previous = 0;
+	if (!options) options = {};
+
+	var later = function() {
+		previous = options.leading === false ? 0 : _.now();
+		timeout = null;
+		result = func.apply(context, args);
+		if (!timeout) context = args = null;
+	};
+
+	var throttled = function() {
+		var now = _.now();
+		if (!previous && options.leading === false) previous = now;
+		var remaining = wait - (now - previous);
+		context = this;
+		args = arguments;
+		if (remaining <= 0 || remaining > wait) {
+			if (timeout) {
+				clearTimeout(timeout);
+				timeout = null;
+			}
+			previous = now;
+			result = func.apply(context, args);
+			if (!timeout) context = args = null;
+		} else if (!timeout && options.trailing !== false) {
+			timeout = setTimeout(later, remaining);
+		}
+		return result;
+	};
+
+	throttled.cancel = function() {
+		clearTimeout(timeout);
+		previous = 0;
+		timeout = context = args = null;
+	};
+
+	return throttled;
+};
+_.now = Date.now || function() {
+	return new Date().getTime();
+};
+
 $(document).ready(function() {
 	initialize();
-	/* Every time the window is scrolled ... */
-	$(window).scroll(showIfInView);
-	$(window).resize(showIfInView);
+	$(window).scroll(_.throttle(showIfInView, 100));
+	$(window).resize(_.throttle(showIfInView, 100));
 	$(window).resize(reduceMargin);
 });
 

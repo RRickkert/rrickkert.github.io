@@ -1,3 +1,6 @@
+/* converter --> https://autoprefixer.github.io/ */
+/* original */
+/*
 .projects-container {
     display              : grid;
     justify-content      : space-between;
@@ -7,6 +10,7 @@
     grid-gap             : 3vw;
     /*grid-template-columns: 1fr .5fr .5fr 1fr;
     grid-template-areas  : "a a b b" "c d d e";*/
+/*
     grid-template-columns: repeat(4, 1fr);
     grid-template-areas  : "a a b b" "c c d d" ". e e .";
 }
@@ -29,6 +33,7 @@
         /*grid-template-columns: 1fr .5fr .5fr 1fr;
         grid-template-rows   : 1fr .5fr .5fr 1fr;
         grid-template-areas  : "a a a c" "a a a d" "b b b d" "b b b e";*/
+/*
         grid-template-columns: repeat(1, 1fr);
         grid-template-areas  : "a" "b" "c" "d" "e";
     }
@@ -60,4 +65,144 @@
 
 .projects-container > div.e {
     grid-area: e;
+}
+*/
+.projects-container {
+    display              : -ms-grid;
+    display              : grid;
+    -webkit-box-pack     : justify;
+    -ms-flex-pack        : justify;
+    justify-content      : space-between;
+    margin-left          : 15vw;
+    margin-right         : 15vw;
+    text-align           : center;
+    grid-gap             : 3vw;
+    /*grid-template-columns: 1fr .5fr .5fr 1fr;
+    grid-template-areas  : "a a b b" "c d d e";*/
+    -ms-grid-columns     : 1fr 3vw 1fr 3vw 1fr 3vw 1fr;
+    grid-template-columns: repeat(4, 1fr);
+    -ms-grid-rows        : auto 3vw auto 3vw auto;
+    grid-template-areas  : "a a b b" "c c d d" ". e e .";
+}
+@media only screen and (max-width:1500px) {
+    .projects-container {
+        margin-left : 10vw;
+        margin-right: 10vw;
+    }
+}
+@media only screen and (max-width:1366px) {
+    .projects-container {
+        margin-left : 5vw;
+        margin-right: 5vw;
+    }
+}
+@media only screen and (max-width:1024px) and (orientation: portrait) {
+    .projects-container {
+        margin-left          : 10vw;
+        margin-right         : 10vw;
+        /*grid-template-columns: 1fr .5fr .5fr 1fr;
+        grid-template-rows   : 1fr .5fr .5fr 1fr;
+        grid-template-areas  : "a a a c" "a a a d" "b b b d" "b b b e";*/
+        -ms-grid-columns     : (1fr)[1];
+        -ms-grid-rows        : auto 3vw auto 3vw auto 3vw auto 3vw auto;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-areas  : "a" "b" "c" "d" "e";
+    }
+}
+@media only screen and (max-width: 414px) and (orientation: portrait) {
+    .projects-container {
+        margin-left          : 5vw;
+        margin-right         : 5vw;
+        -ms-grid-columns     : (1fr)[1];
+        -ms-grid-rows        : auto 3vw auto 3vw auto 3vw auto 3vw auto;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-areas  : "a" "b" "c" "d" "e";
+    }
+}
+
+.projects-container > div.a {
+    -ms-grid-row        : 1;
+    -ms-grid-column     : 1;
+    -ms-grid-column-span: 3;
+    grid-area           : a;
+}
+
+.projects-container > div.b {
+    -ms-grid-row        : 1;
+    -ms-grid-column     : 5;
+    -ms-grid-column-span: 3;
+    grid-area           : b;
+}
+
+.projects-container > div.c {
+    -ms-grid-row        : 3;
+    -ms-grid-column     : 1;
+    -ms-grid-column-span: 3;
+    grid-area           : c;
+}
+
+.projects-container > div.d {
+    -ms-grid-row        : 3;
+    -ms-grid-column     : 5;
+    -ms-grid-column-span: 3;
+    grid-area           : d;
+}
+
+.projects-container > div.e {
+    -ms-grid-row        : 5;
+    -ms-grid-column     : 3;
+    -ms-grid-column-span: 3;
+    grid-area           : e;
+}
+@media only screen and (max-width:1024px) and (orientation: portrait) {
+    .projects-container > div.a {
+        -ms-grid-row   : 1;
+        -ms-grid-column: 1;
+    }
+
+    .projects-container > div.b {
+        -ms-grid-row   : 3;
+        -ms-grid-column: 1;
+    }
+
+    .projects-container > div.c {
+        -ms-grid-row   : 5;
+        -ms-grid-column: 1;
+    }
+
+    .projects-container > div.d {
+        -ms-grid-row   : 7;
+        -ms-grid-column: 1;
+    }
+
+    .projects-container > div.e {
+        -ms-grid-row   : 9;
+        -ms-grid-column: 1;
+    }
+}
+@media only screen and (max-width: 414px) and (orientation: portrait) {
+    .projects-container > div.a {
+        -ms-grid-row   : 1;
+        -ms-grid-column: 1;
+    }
+
+    .projects-container > div.b {
+        -ms-grid-row   : 3;
+        -ms-grid-column: 1;
+    }
+
+    .projects-container > div.c {
+        -ms-grid-row   : 5;
+        -ms-grid-column: 1;
+    }
+
+    .projects-container > div.d {
+        -ms-grid-row   : 7;
+        -ms-grid-column: 1;
+    }
+
+    .projects-container > div.e {
+        -ms-grid-row   : 9;
+        -ms-grid-column: 1;
+    }
 }
