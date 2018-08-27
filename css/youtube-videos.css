@@ -1,0 +1,28 @@
+.overlay {
+    background-color: black;
+    background-size : cover;
+}
+
+.overlay.hide {
+    opacity   : 0;
+    transition: opacity 1000ms;
+}
+
+.overlay.show {
+    opacity   : 1;
+    transition: opacity 1000ms;
+}
+
+#shotgo .overlay {
+    background-image: url("images/projects/shotgo/1.jpg");
+}
+
+#tetracer .overlay {
+    background-image: url("images/projects/tetracer/1.jpg");
+}
+
+.youtube-video {
+    position: absolute;
+    width   : 100%;
+    height  : 100%;
+}

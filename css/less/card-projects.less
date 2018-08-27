@@ -12,6 +12,15 @@
 @import "card-aspect-ratio.less";
 
 .card.@{class-name} {
+    & .content {
+        & img {
+            object-fit: contain;
+            width: @img-width;
+            height: @img-height;
+            position: absolute;
+        }
+    }
+
     & .text-container {
         & h5 {
             font-size: 1vw;
