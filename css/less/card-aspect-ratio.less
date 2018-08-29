@@ -5,6 +5,7 @@
     padding-top: @aspect-ratio-h / @aspect-ratio-w * 100%;
 
     & .content {
+        -webkit-transform: translate(0, 0);
         transform: translate(0, 0);
         transition: transform 0.4s @transition-type;
 
@@ -38,6 +39,7 @@
     }
 
     &:hover .content {
+        -webkit-transform: translate(0, -@image-area-height);
         transform: translate(0, -@image-area-height);
         transition: transform 0.4s @transition-type;
 
