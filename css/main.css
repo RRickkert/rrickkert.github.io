@@ -21,6 +21,10 @@ h2 {
     font-size: 2em;
 }
 
+::-webkit-scrollbar {
+    display: none;
+}
+
 .card h4 {
     color      : #bfb199;
     font-weight: bold;
