@@ -1,28 +1,34 @@
-html {
+div {
+    box-sizing: border-box;
+}
+
+* {
+    margin : 0;
+    padding: 0;
+    top    : 0;
+}
+
+body {
     background-color: #0a0a0c;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-weight: normal;
-    font-family: 'PT Serif', serif;
-    color      : #bfb199;
-}
-
-h1 {
-    font-size: 2.5em;
-}
-
-h2 {
-    font-size: 2em;
 }
 
 ::-webkit-scrollbar {
     display: none;
+}
+
+* {
+    -ms-overflow-style: none;
+    font-weight       : normal;
+    font-family       : 'PT Serif', serif;
+    color             : #bfb199;
+}
+
+h1 {
+    font-size: 5em;
+}
+
+h2 {
+    font-size: 2em;
 }
 
 .card h4 {
@@ -38,136 +44,4 @@ h2 {
     color      : #bfb199;
     line-height: normal;
     text-align : left;
-}
-
-.card.about-me h4 {
-    font-size: 1.5em;
-}
-
-.card.about-me h5 {
-    font-size: 1em;
-}
-
-.card.about-me h6 {
-    margin-left : 20px;
-    margin-right: 20px;
-}
-
-.card.skills h4 {
-    font-size: 1.3em;
-}
-
-.card.skills h5 {
-    font-size: 1em;
-}
-
-.card.skills h6 {
-    margin-left : 20px;
-    margin-right: 20px;
-}
-
-.card.projects h4 {
-    font-size: 1.5em;
-}
-
-.card.projects h5 {
-    font-size: 1em;
-}
-
-.card.projects h6 {
-    font-size   : 1em;
-    margin-left : 20px;
-    margin-right: 20px;
-}
-
-.info-card {
-    width           : 100%;
-    border-color    : #32281f;
-    border-width    : 2px;
-    border-style    : solid;
-    background-color: #101217;
-}
-
-.info-card .mask {
-    clip-path: inset(0);
-}
-
-.info-card .content {
-    margin-top: 0;
-    transition: margin-top .4s;
-}
-
-.info-card .content:hover {
-    transition: margin-top .4s;
-}
-
-.info-card.about-me .content:hover {
-    margin-top: -65%;
-}
-
-.info-card.projects .content:hover {
-    margin-top: -56.5%;
-}
-
-.info-card.skills .content:hover {
-    margin-top: -55.2%;
-}
-
-.info-card .content .line {
-    width           : 42%;
-    height          : 1px;
-    background-color: #584D38;
-    display         : inline-block;
-    vertical-align  : middle;
-}
-
-.info-card .content .icon {
-    width              : 16%;
-    padding-top        : 16%;
-    background-repeat  : no-repeat;
-    background-position: center;
-    background-size    : 75%;
-    box-shadow         : 0 0 0 2px #584D38;
-    border-radius      : 50%;
-    display            : inline-block;
-    vertical-align     : middle;
-    background-color   : #101217;
-}
-
-.info-card.projects .content .icon {
-    width      : 10%;
-    padding-top: 10%;
-}
-
-.info-card.projects .content .line {
-    width: 45%;
-}
-
-.info-card .content .line-with-icon {
-    width     : 100%;
-    height    : 50px;
-    margin-top: 20px;
-    font-size : 0;
-}
-
-.info-card.projects .content .line-with-icon {
-    width     : 100%;
-    height    : 50px;
-    margin-top: -32px;
-    font-size : 0;
-    transition: margin-top .4s;
-}
-
-.info-card.projects .content:hover .line-with-icon {
-    margin-top: 20px;
-    transition: margin-top .4s;
-}
-
-.info-card .content,
-.info-card .mask {
-    position: absolute;
-    top     : 0;
-    left    : 0;
-    bottom  : 0;
-    right   : 0;
 }

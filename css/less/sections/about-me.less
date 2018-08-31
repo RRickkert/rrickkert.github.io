@@ -1,38 +1,62 @@
-// main: cards.less
+// main: ../sections.less 
 
-.card.skills {
-    .insertCardDetails(@aspect-ratio-w: 10, @aspect-ratio-h: 11, @aspect-ratio-img-w: 20, @aspect-ratio-img-h: 17, @circle-size: 15%, @img-width: 75%);
+.card.about-me {
+    & h4 {
+        font-size: 1.5em;
+    }
+
+    & h5 {
+        font-size: 1em;
+    }
+
+    & h6 {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
 
     & .content {
         & .img-area img {
-            -webkit-transform: scale(0.75, 0.75);
-            transform: scale(0.75, 0.75);
+            -webkit-transform: scale(0.85, 0.85);
+            transform: scale(0.85, 0.85);
+            border-radius: 50%;
         }
     }
 
     & .text-container {
         & h5 {
-            font-size: 0.75vw;
+            font-size: 1vw;
         }
 
         & h4 {
             font-size: 1.3vw;
         }
+
+        & h6 {
+            font-size: 1vw;
+        }
         @media only screen and (max-width:1024px) and (orientation: portrait) {
             & h5 {
-                font-size: 1.5vw;
+                font-size: 1.8vw;
             }
 
             & h4 {
-                font-size: 2.1vw;
+                font-size: 2.5vw;
+            }
+
+            & h6 {
+                font-size: 1.8vw;
             }
         }
         @media only screen and (max-width: 414px) and (orientation: portrait) {
             & h5 {
-                font-size: 2.5vw;
+                font-size: 4vw;
             }
 
             & h4 {
+                font-size: 5vw;
+            }
+
+            & h6 {
                 font-size: 4vw;
             }
         }
@@ -40,16 +64,16 @@
 
     & .description-area {
         & h6 {
-            font-size: 0.7vw;
+            font-size: 0.9vw;
         }
         @media only screen and (max-width:1024px) and (orientation: portrait) {
             & h6 {
-                font-size: 1.25vw;
+                font-size: 1.7vw;
             }
         }
         @media only screen and (max-width: 414px) and (orientation: portrait) {
             & h6 {
-                font-size: 2.1vw;
+                font-size: 3.9vw;
             }
         }
     }

@@ -1,0 +1,11 @@
+div {
+  align-items: baseline;
+}
+div #b {
+  top: 1px;
+  left: 10px;
+}
+div #c {
+  top: 10px;
+  left: 2px;
+}

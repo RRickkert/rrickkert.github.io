@@ -1,22 +1,11 @@
-// out: ../card-projects.css
-@aspect-ratio-w: 6;
-@aspect-ratio-h: 5;
-@aspect-ratio-img-w: 16;
-@aspect-ratio-img-h: 9;
-@circle-size: 10%; // of width
-@class-name: projects;
-@transition-type: ease-in-out;
-@circle-should-overlap: 1;
-@img-width: 100%;
-@img-height: auto;
-@import "card-aspect-ratio.less";
+// main: cards.less
 
-.card.@{class-name} {
+.card.projects {
+    .insertCardDetails(@aspect-ratio-w: 6, @aspect-ratio-h: 5, @aspect-ratio-img-w: 16, @aspect-ratio-img-h: 9, @circle-size: 10%, @circle-should-overlap: 1);
+
     & .content {
         & img {
             object-fit: contain;
-            width: @img-width;
-            height: @img-height;
             position: absolute;
         }
     }

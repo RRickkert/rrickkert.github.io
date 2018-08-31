@@ -1,7 +1,6 @@
-@circle-height-percentage: (@aspect-ratio-w / @aspect-ratio-h) * @circle-size;
-@image-area-height: (@aspect-ratio-w / @aspect-ratio-h) * ((@aspect-ratio-img-h*@img-width) / (@aspect-ratio-img-w*100%)) * 100%;
-
-.card.@{class-name} {
+.insertCardDetails(@aspect-ratio-w, @aspect-ratio-h, @aspect-ratio-img-w, @aspect-ratio-img-h, @circle-size, @transition-type: ease-in-out, @circle-should-overlap: 0, @img-width: 100%, @img-height: auto) {
+    @circle-height-percentage: (@aspect-ratio-w / @aspect-ratio-h) * @circle-size;
+    @image-area-height: (@aspect-ratio-w / @aspect-ratio-h) * ((@aspect-ratio-img-h*@img-width) / (@aspect-ratio-img-w*100%)) * 100%;
     padding-top: @aspect-ratio-h / @aspect-ratio-w * 100%;
 
     & .content {

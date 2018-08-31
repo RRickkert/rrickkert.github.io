@@ -52,6 +52,7 @@ nav li a {
 }
 
 nav .active,
+nav .in-view,
 nav li a:hover {
     color     : #BCA785;
     font-size : 130%;
