@@ -70,6 +70,21 @@
   background-position: center;
   background-image: url("/images/icons/programmer.png");
 }
+.card .circle.stars-1 {
+  background-image: url("/images/stars/1.png");
+}
+.card .circle.stars-2 {
+  background-image: url("/images/stars/2.png");
+}
+.card .circle.stars-3 {
+  background-image: url("/images/stars/3.png");
+}
+.card .circle.stars-4 {
+  background-image: url("/images/stars/4.png");
+}
+.card .circle.stars-5 {
+  background-image: url("/images/stars/5.png");
+}
 .card .text-container {
   width: 100%;
   height: calc(45%);
