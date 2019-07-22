@@ -6,14 +6,15 @@
 
     <meta charset="UTF-8">
     <meta name="description"
-          content="Portfolio website from Rick Rosendaal">
+          content="Portfolio website from Rick LastName">
     <meta name="author"
-          content="Rick Rosendaal">
+          content="Rick LastName">
     <meta name="viewport"
           content="width=device-width, initial-scale=1.0">
     <!-- styles -->
-    <link rel="stylesheet"
-          href="https://fonts.googleapis.com/css?family=PT+Serif:400,700">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700"
+          rel="stylesheet">
+
     <link rel="stylesheet"
           href="https://necolas.github.io/normalize.css/8.0.0/normalize.css">
 
@@ -39,6 +40,7 @@
             z-index: 2;
             display: inline-block;
             -webkit-transform: translate(-50%, 0%);
+            -ms-transform: translate(-50%, 0%);
             transform: translate(-50%, 0%);
             letter-spacing: .1em;
             text-decoration: none;
@@ -61,9 +63,12 @@
             border-left: 1px solid #bfb199;
             border-bottom: 1px solid #bfb199;
             -webkit-transform: rotate(-45deg);
+            -ms-transform: rotate(-45deg);
             transform: rotate(-45deg);
+
             -webkit-animation: sdb05 1.5s infinite;
             animation: sdb05 1.5s infinite;
+
             box-sizing: border-box;
         }
 
@@ -76,13 +81,14 @@
                 opacity: 1;
             }
             100% {
-                transform: rotate(-45deg) translate(-20px, 20px);
+                -webkit-transform: rotate(-45deg) translate(-20px, 20px);
                 opacity: 0;
             }
         }
 
         @keyframes sdb05 {
             0% {
+                -webkit-transform: rotate(-45deg) translate(20px, -20px);
                 transform: rotate(-45deg) translate(20px, -20px);
                 opacity: 0;
             }
@@ -90,9 +96,14 @@
                 opacity: 1;
             }
             100% {
+                -webkit-transform: rotate(-45deg) translate(-20px, 20px);
                 transform: rotate(-45deg) translate(-20px, 20px);
                 opacity: 0;
             }
+        }
+
+        video {
+            object-fit: fill;
         }
     </style>
 </head>
@@ -102,11 +113,19 @@
     <!--div id="content"-->
     <div id="home"
          style="width:100%;height: 100vh; text-align:center;">
-        <div>
-            <div class="background"></div>
-            <div style="text-align: center; position: absolute; width:100%; height:100%; display: table;">
+        <div style="width:100%;height: 100vh;">
+            <video class="youtube-video"
+                   muted
+                   autoplay
+                   loop
+                   poster="/images/projects/teamnow/1.jpg"
+                   preload="none"
+                   style="object-fit: cover; width:100%; height:100%; ">
+                <source src="/videos/allprojects.mp4" type='video/mp4'/>
+            </video>
+            <div style="text-align: center; position: absolute; width:100%; height:100%; display: table; background-color:rgba(1,1,1,0.5);">
                 <div style="display:table-cell; vertical-align: middle; height: 50%;">
-                    <h1 style=" display: block; vertical-align: middle; ">RICK ROSENDAAL </h1>
+                    <h1 style=" display: block; vertical-align: middle; ">RICK LASTNAME </h1>
                     <h2 style=" display: block; vertical-align: middle; ">Game & software developer</h2>
                     <br>
                     <br>
@@ -148,6 +167,190 @@
                    target="projects">Projects</a></li>
         </ul>
     </nav>
+
+    <div id="projects"
+         style="height:100px; text-align: center; margin-top: 100px;">
+        <div class="background"></div>
+        <div style="width:19vw; height:2px; background-image: linear-gradient(to left, transparent 0%, transparent 7%, rgba(88, 77, 56, 0.31) 7%, rgba(88, 77, 56, 0.31) 60%, rgba(88, 77, 56, 0) 100%); margin-top: 20px;display:inline-block;"></div>
+        <h2 style="vertical-align: middle; display:inline-block;">PROJECTS</h2>
+        <div style="width:19vw; height:2px; background-image: linear-gradient(to right, transparent 0%, transparent 7%, rgba(88, 77, 56, 0.31) 7%, rgba(88, 77, 56, 0.31) 60%, rgba(88, 77, 56, 0) 100%); margin-top: 20px;display:inline-block;"></div>
+    </div>
+
+    <div class="projects-container">
+        <div class="a">
+            <div class="card projects">
+                <div class="mask">
+                    <div class="content">
+                        <div class="img-area">
+                            <video class="youtube-video"
+                                   muted
+                                   autoplay
+                                   loop
+                                   poster="/images/projects/shotgo/1.jpg"
+                                   preload="none">
+                                <source src="/videos/shotgo.webm" type='video/webm'/>
+                                <source src="/videos/shotgo.mp4" type='video/mp4'/>
+                            </video>
+                        </div>
+                        <div class="line-area">
+                            <div class="line"></div>
+                            <div class="circle"
+                                 style="background-image:url('/images/icons/target.png');"></div>
+                        </div>
+                        <div class="text-container">
+                            <h5>Because who says you can't use your pogostick in a fight!?</h5>
+                            <h4>Shotgo</h4>
+                        </div>
+                        <div class="description-area">
+                            <h6>Shogo is a multiplayer pogo mayhem first person shooter, play online with others and rise to the top of the score board. Controlled movement is key to winning the game as your momentum can give you an edge over your opponents.
+                                find all kinds of cool weapons troughout the level and spread the mayhem.
+                            </h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="b">
+            <div class="card projects">
+                <div class="mask">
+                    <div class="content">
+                        <div class="img-area">
+                            <video class="youtube-video"
+                                   muted
+                                   autoplay
+                                   loop
+                                   poster="/images/projects/tetracer/1.jpg"
+                                   preload="none">
+                                <source src="/videos/tetracer.webm" type='video/webm'/>
+                                <source src="/videos/tetracer.mp4" type='video/mp4'/>
+                            </video>
+                        </div>
+                        <div class="line-area">
+                            <div class="line"></div>
+                            <div class="circle"
+                                 style="background-image:url('images/stars/5.png');"></div>
+                        </div>
+                        <div class="text-container">
+                            <h5>Combining tetris and racing!</h5>
+                            <h4>Tetracer</h4>
+                        </div>
+                        <div class="description-area">
+                            <h6>Tetracer is a challenging but fun arcade racing game where you need to driver over temporary placed platforms that are being build by your buddy or the AI. The challenge is to move as quickly as possible while not falling of
+                                the platforms or hitting an obstacle. This game is meant to enable fun and to challenge you to beat the highscore.
+                            </h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="c">
+            <div class="card projects">
+                <div class="mask">
+                    <div class="content">
+                        <div class="img-area">
+                            <video class="youtube-video"
+                                   muted
+                                   autoplay
+                                   loop
+                                   poster="/images/projects/the-deep-blue/1.jpg"
+                                   preload="none">
+                                <source src="/videos/the-deep-blue.webm" type='video/webm'/>
+                                <source src="/videos/the-deep-blue.mp4" type='video/mp4'/>
+                            </video>
+                        </div>
+                        <div class="line-area">
+                            <div class="line"></div>
+                            <div class="circle"
+                                 style="background-image:url('images/stars/5.png');"></div>
+                        </div>
+                        <div class="text-container">
+                            <h5>A underwater exploration game created in C++</h5>
+                            <h4>The Deep Blue</h4>
+                        </div>
+                        <div class="description-area">
+                            <h6>The Deep Blue is a game we've created with a group of 6 people within 4 weeks as a school assignment. The game was created 'from scratch' using our self-written engine in C++. Most of the development on the engine was also
+                                done within those 4 weeks.
+                                <br><br>In the game you're diving, finding signs of an ancient civilization which lived on the bottom of the ocean. Your goal: Figure out what happened to this civilization.
+                            </h6>
+                            <!--h6>Are your people aware of the progress they’re making? Do they know how other teams are performing? With our gamification platform your people will go on a journey in a fun way while they're making their team stronger and stronger.
+                                <br><br>TeamNow is a gamification project created for a company called TeamValue, based in Zwolle, The Netherlands. The goal from this project is to give people within a company, insight as to how teams within the company
+                                are performing. By visualizing it in a fun way, it attracts the attention, and keeps people interested.
+                            </h6-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="d">
+            <div class="card projects">
+                <div class="mask">
+                    <div class="content">
+                        <div class="img-area">
+                            <video class="youtube-video"
+                                   muted
+                                   autoplay
+                                   loop
+                                   poster="/images/projects/teamnow/1.jpg"
+                                   preload="none">
+                                <source src="/videos/teamnow.webm" type='video/webm'/>
+                                <source src="/videos/teamnow.mp4" type='video/mp4'/>
+                            </video>
+                        </div>
+                        <div class="line-area">
+                            <div class="line"></div>
+                            <div class="circle"
+                                 style="background-image:url('images/stars/5.png');"></div>
+                        </div>
+                        <div class="text-container">
+                            <h5>Combining games and business.</h5>
+                            <h4>TeamNow</h4>
+                        </div>
+                        <div class="description-area">
+                            <h6>Are your people aware of the progress they’re making? Do they know how other teams are performing? With our gamification platform your people will go on a journey in a fun way while they're making their team stronger and stronger.
+                                <br><br>TeamNow is a gamification project created for a company called TeamValue, based in Zwolle, The Netherlands. The goal from this project is to give people within a company, insight as to how teams within the company
+                                are performing. By visualizing it in a fun way, it attracts the attention, and keeps people interested.
+                            </h6>
+                            <!--h6>In most RPG games, you would play the adventurer, going on quests, complete them, buy new weapons and armor and become stronger. We thought: "What happens to a village when you, as an adventurer, leave the place?" With this
+                                question in mind, we created a game where you're the king of a city and help the adventurers. You can give them quests, reward them, build stores and upgrade them to expand their inventories.</h6-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="e">
+            <div class="card projects">
+                <div class="mask">
+                    <div class="content">
+                        <div class="img-area">
+                            <video class="youtube-video"
+                                   muted
+                                   autoplay
+                                   loop
+                                   poster="/images/projects/droid-defense/1.jpg"
+                                   preload="none">
+                                <source src="/videos/droid-defense.webm" type='video/webm'/>
+                                <source src="/videos/droid-defense.mp4" type='video/mp4'/>
+                            </video>
+                        </div>
+                        <div class="line-area">
+                            <div class="line"></div>
+                            <div class="circle"
+                                 style="background-image:url('images/stars/3.png');"></div>
+                        </div>
+                        <div class="text-container">
+                            <h5>A first person tower defense game</h5>
+                            <h4>Droid Defense</h4>
+                        </div>
+                        <div class="description-area">
+                            <h6>Droid Defense is a game we've created with a group of 5 people within 3 weeks as a school assignment. We used Unity as game engine for our game. In the game your goal is to protect your base, you can do so by placing turrets,
+                                walls, etc., which will shoot incoming waves of enemies. Next to placing turrets, you can also run around yourself and shoot the enemies attacking.</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div style="height:65px;"> </div>
     <div id="about-me"
          style="height:100px; text-align: center;">
@@ -163,7 +366,7 @@
                 <div class="mask">
                     <div class="content">
                         <div class="img-area">
-                            <img src="images/personal/rick-professional.jpg"
+                            <img src="images/personal/rick-professional-obscured.jpg"
                                  alt="A photo from Rick in a suit">
                         </div>
                         <div class="line-area">
@@ -176,8 +379,8 @@
                             <h4>Rick LastName</h4>
                         </div>
                         <div class="description-area">
-                            <h6>My name is <b>Rick Rosendaal</b> and I like to describe myself as a software developer with a passion for games and gamification. In 2011 I started studying <b>Game Development</b> at <b>Deltion College</b> in Zwolle. This
-                                is where I found out that <b>I really loved programming</b>. Even though I've <b>mainly been focusing on developing games</b>, I've also decided to look outside of the gaming world to see what's out there.
+                            <h6>My name is <b>Rick LastName</b> and I like to describe myself as a software developer with a passion for games and gamification. In 2011 I started studying <b>Game Development</b> at <b>Deltion College</b> in Zwolle. This is
+                                where I found out that <b>I really loved programming</b>. Even though I've <b>mainly been focusing on developing games</b>, I've also decided to look outside of the gaming world to see what's out there.
                             </h6>
                         </div>
                     </div>
@@ -189,7 +392,7 @@
                 <div class="mask">
                     <div class="content">
                         <div class="img-area">
-                            <img src="images/personal/rick-avatarz.jpg"
+                            <img src="images/personal/rick-avatarz-obscured.jpg"
                                  alt="A photo from Rick in the climbing forest he works at">
                         </div>
                         <div class="line-area">
@@ -198,7 +401,7 @@
                                  style="background-image:url(images/icons/forest.png);"></div>
                         </div>
                         <div class="text-container">
-                            <h5>Climbing forest name</h5>
+                            <h5>Avatarz Nature Park</h5>
                             <h4>Climbing instructor</h4>
                         </div>
                         <div class="description-area">
@@ -300,8 +503,8 @@
                                  style="background-image:url(images/icons/education.png);"></div>
                         </div>
                         <div class="text-container">
-                            <h5>Saxion</h5>
-                            <h4>Student Game Engineering</h4>
+                            <h5>Student Game Engineering</h5>
+                            <h4>Saxion</h4>
                         </div>
                         <div class="description-area">
                             <h6>After graduating as a <b>Game Developer</b> at <b>Deltion College</b>, I started the <b>Bachelor Game Engineering</b> on <b>Saxion Enschede</b>. The main reason I decided to keep on studying was that I just didn't know enough
@@ -342,7 +545,7 @@
     </div>
 
     <div id="skills"
-         style="height:100px; text-align: center; margin-top: 100px;">
+         style="height:150px; text-align: center; margin-top: 300px;">
         <div class="background"></div>
         <div style="width:19vw; height:2px; background-image: linear-gradient(to left, transparent 0%, transparent 7%, rgba(88, 77, 56, 0.31) 7%, rgba(88, 77, 56, 0.31) 60%, rgba(88, 77, 56, 0) 100%); margin-top: 20px;display:inline-block;"></div>
         <h2 style="vertical-align: middle; display:inline-block;">SKILLS</h2>
@@ -665,189 +868,8 @@
         </div>
     </div>
 
-    <div id="projects"
-         style="height:100px; text-align: center; margin-top: 100px;">
-        <div class="background"></div>
-        <div style="width:19vw; height:2px; background-image: linear-gradient(to left, transparent 0%, transparent 7%, rgba(88, 77, 56, 0.31) 7%, rgba(88, 77, 56, 0.31) 60%, rgba(88, 77, 56, 0) 100%); margin-top: 20px;display:inline-block;"></div>
-        <h2 style="vertical-align: middle; display:inline-block;">PROJECTS</h2>
-        <div style="width:19vw; height:2px; background-image: linear-gradient(to right, transparent 0%, transparent 7%, rgba(88, 77, 56, 0.31) 7%, rgba(88, 77, 56, 0.31) 60%, rgba(88, 77, 56, 0) 100%); margin-top: 20px;display:inline-block;"></div>
-    </div>
-
-    <div class="projects-container">
-        <div class="a">
-            <div class="card projects">
-                <div class="mask">
-                    <div class="content">
-                        <div class="img-area">
-                            <video class="youtube-video"
-                                   muted
-                                   autoplay
-                                   loop
-                                   poster="/images/projects/shotgo/1.jpg"
-                                   preload="none">
-                                <source src="/videos/shotgo.webm" type='video/webm'/>
-                                <source src="/videos/shotgo.mp4" type='video/mp4'/>
-                            </video>
-                        </div>
-                        <div class="line-area">
-                            <div class="line"></div>
-                            <div class="circle"
-                                 style="background-image:url('/images/icons/target.png');"></div>
-                        </div>
-                        <div class="text-container">
-                            <h5>Because who says you can't use your pogostick in a fight!?</h5>
-                            <h4>Shotgo</h4>
-                        </div>
-                        <div class="description-area">
-                            <h6>Shogo is a multiplayer pogo mayhem first person shooter, play online with others and rise to the top of the score board. Controlled movement is key to winning the game as your momentum can give you an edge over your opponents.
-                                find all kinds of cool weapons troughout the level and spread the mayhem.
-                            </h6>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="b">
-            <div class="card projects">
-                <div class="mask">
-                    <div class="content">
-                        <div class="img-area">
-                            <video class="youtube-video"
-                                   muted
-                                   autoplay
-                                   loop
-                                   poster="/images/projects/tetracer/1.jpg"
-                                   preload="none">
-                                <source src="/videos/tetracer.webm" type='video/webm'/>
-                                <source src="/videos/tetracer.mp4" type='video/mp4'/>
-                            </video>
-                        </div>
-                        <div class="line-area">
-                            <div class="line"></div>
-                            <div class="circle"
-                                 style="background-image:url('images/stars/5.png');"></div>
-                        </div>
-                        <div class="text-container">
-                            <h5>Combining tetris and racing!</h5>
-                            <h4>Tetracer</h4>
-                        </div>
-                        <div class="description-area">
-                            <h6>Tetracer is a challenging but fun arcade racing game where you need to driver over temporary placed platforms that are being build by your buddy or the AI. The challenge is to move as quickly as possible while not falling of
-                                the platforms or hitting an obstacle. This game is meant to enable fun and to challenge you to beat the highscore.
-                            </h6>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="c">
-            <div class="card projects">
-                <div class="mask">
-                    <div class="content">
-                        <div class="img-area">
-                            <video class="youtube-video"
-                                   muted
-                                   autoplay
-                                   loop
-                                   poster="/images/projects/the-deep-blue/1.jpg"
-                                   preload="none">
-                                <source src="/videos/the-deep-blue.webm" type='video/webm'/>
-                                <source src="/videos/the-deep-blue.mp4" type='video/mp4'/>
-                            </video>
-                        </div>
-                        <div class="line-area">
-                            <div class="line"></div>
-                            <div class="circle"
-                                 style="background-image:url('images/stars/5.png');"></div>
-                        </div>
-                        <div class="text-container">
-                            <h5>A underwater exploration game created in C++</h5>
-                            <h4>The Deep Blue</h4>
-                        </div>
-                        <div class="description-area">
-                            <h6>The Deep Blue is a game we've created with a group of 6 people within 4 weeks as a school assignment. The game was created 'from scratch' using our self-written engine in C++. Most of the development on the engine was also
-                                done within those 4 weeks.
-                                <br><br>In the game you're diving, finding signs of an ancient civilization which lived on the bottom of the ocean. Your goal: Figure out what happened to this civilization.
-                            </h6>
-                            <!--h6>Are your people aware of the progress they’re making? Do they know how other teams are performing? With our gamification platform your people will go on a journey in a fun way while they're making their team stronger and stronger.
-                                <br><br>TeamNow is a gamification project created for a company called TeamValue, based in Zwolle, The Netherlands. The goal from this project is to give people within a company, insight as to how teams within the company
-                                are performing. By visualizing it in a fun way, it attracts the attention, and keeps people interested.
-                            </h6-->
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="d">
-            <div class="card projects">
-                <div class="mask">
-                    <div class="content">
-                        <div class="img-area">
-                            <video class="youtube-video"
-                                   muted
-                                   autoplay
-                                   loop
-                                   poster="/images/projects/teamnow/1.jpg"
-                                   preload="none">
-                                <source src="/videos/teamnow.webm" type='video/webm'/>
-                                <source src="/videos/teamnow.mp4" type='video/mp4'/>
-                            </video>
-                        </div>
-                        <div class="line-area">
-                            <div class="line"></div>
-                            <div class="circle"
-                                 style="background-image:url('images/stars/5.png');"></div>
-                        </div>
-                        <div class="text-container">
-                            <h5>Combining games and business.</h5>
-                            <h4>TeamNow</h4>
-                        </div>
-                        <div class="description-area">
-                            <h6>Are your people aware of the progress they’re making? Do they know how other teams are performing? With our gamification platform your people will go on a journey in a fun way while they're making their team stronger and stronger.
-                                <br><br>TeamNow is a gamification project created for a company called TeamValue, based in Zwolle, The Netherlands. The goal from this project is to give people within a company, insight as to how teams within the company
-                                are performing. By visualizing it in a fun way, it attracts the attention, and keeps people interested.
-                            </h6>
-                            <!--h6>In most RPG games, you would play the adventurer, going on quests, complete them, buy new weapons and armor and become stronger. We thought: "What happens to a village when you, as an adventurer, leave the place?" With this
-                                question in mind, we created a game where you're the king of a city and help the adventurers. You can give them quests, reward them, build stores and upgrade them to expand their inventories.</h6-->
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="e">
-            <div class="card projects">
-                <div class="mask">
-                    <div class="content">
-                        <div class="img-area">
-                            <video class="youtube-video"
-                                   muted
-                                   autoplay
-                                   loop
-                                   poster="/images/projects/droid-defense/1.jpg"
-                                   preload="none">
-                                <source src="/videos/droid-defense.webm" type='video/webm'/>
-                                <source src="/videos/droid-defense.mp4" type='video/mp4'/>
-                            </video>
-                        </div>
-                        <div class="line-area">
-                            <div class="line"></div>
-                            <div class="circle"
-                                 style="background-image:url('images/stars/3.png');"></div>
-                        </div>
-                        <div class="text-container">
-                            <h5>A first person tower defense game</h5>
-                            <h4>Droid Defense</h4>
-                        </div>
-                        <div class="description-area">
-                            <h6>Droid Defense is a game we've created with a group of 5 people within 3 weeks as a school assignment. We used Unity as game engine for our game. In the game your goal is to protect your base, you can do so by placing turrets,
-                                walls, etc., which will shoot incoming waves of enemies. Next to placing turrets, you can also run around yourself and shoot the enemies attacking.</h6>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
     <div style="height: 400px;"></div>
+
     <!--/div-->
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
@@ -859,5 +881,14 @@
     <script src="js/youtube.js"></script>
     <script src="js/home-scroll.js"></script>
 </body>
+
+<footer style="text-align:center; margin-bottom: 20px;">
+    <div>
+        <a href="/impressum.html">Credits</a>
+    </div>
+    <p>
+        © 2018 Rick LastName, All rights reserved.
+    </p>
+</footer>
 
 </html>

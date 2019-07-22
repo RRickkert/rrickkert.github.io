@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+
+<head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        //Als het HTML document klaar is met laden:
+
+        function onRecipesLoaded(recipes) {
+            recipes.forEach(function(recipe) {
+                console.log(recipe);
+                addRecipeToDocument(recipe);
+            });
+        }
+
+        function addRecipeToDocument(recipe) {
+            console.log(recipe);
+            var newDIV = document.createElement("div");
+            var newH3 = document.createElement("h3");
+            var newUL = document.createElement("ul");
+            var newLI = document.createElement("li");
+            var newIMG = document.createElement("img");
+            var newBUTTON = document.createElement("button");
+            //In de variabel "allRecipes" (wat dus de ID is van de container in het HTML document), voegen we een nieuwe child toe. De child die we toevoegen is de variabel dat we eerder hebben opgeslagen als HTML tags.
+            allRecipes.appendChild(newDIV);
+            newDIV.appendChild(newH3);
+            newDIV.appendChild(newUL);
+            newUL.appendChild(newLI);
+            newDIV.appendChild(newIMG);
+            newDIV.appendChild(newBUTTON);
+
+            newH3.innerHTML = recipe.dish;
+            newLI.innerHTML = recipe.ingredients;
+            newIMG.src = recipe.image;
+            newIMG.alt = recipe.dish;
+            newBUTTON.innerHTML = recipe.dish;
+        }
+
+        $(document).ready(function() {
+            //Maak variabelen aan waar HTML tags worden opgeslagen.
+
+
+            //Maak een variabel dat de ID van de HTML container opslaat. In deze container moeten de tags gecreï¿½erd worden.
+            var allRecipes = document.getElementById("allRecipes");
+            //Nu de elementen zijn gecreï¿½erd, halen we de JSON file op. Eerst maken we een variabel dat de data van de JSON file kan opslaan.
+            //Maak een http request object aan
+            var request = new XMLHttpRequest();
+            //XMLHttpRequest.open(method, url, async) --> Get = Iets ophalen, async, of het op de achtergrond moet gebeuren of niet.
+            request.open("GET", "data.json", true);
+            request.onload = function() {
+                onRecipesLoaded(JSON.parse(request.responseText).Recipes);
+            };
+            //XMLHttpRequest.send(body) --> Body is niet nodig om mee te sturen, dus we gebruiken null
+            request.send(null);
+        });
+    </script>
+
+    <meta charset="utf-8">
+    <title>Cuisine - Recipes</title>
+    <style>
+        #preloader img,
+        #preloader p {
+            display: block;
+            width: 200px;
+            margin: 0 auto;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="preloader">
+        <h1>Recepten</h1>
+        <p id="notification">We halen lekkere recepten op.<br>Één moment...</p>
+        <img src="images/loading.gif"
+             alt="Loading">
+    </div>
+
+    <div id="allRecipes">
+
+
+    </div>
+
+
+</body>
+
+</html>

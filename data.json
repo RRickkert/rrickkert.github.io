@@ -1,0 +1,15 @@
+{
+    "Recipes": [{
+            "dish": "Thaise Kip",
+            "ingredients": ["600 gr. kipfilet", "paprika groen/geel/rood", "1 bosje Koriander", "1 zakje Cashewnoten", "250 gr. shi-take"],
+            "image": "../images/recepten/thaise-kip.jpg",
+            "button": "Thaise Kip Maken"
+        },
+        {
+            "dish": "Visgerecht",
+            "ingredients": ["600 gr. kipfilet", "paprika groen/geel/rood", "1 bosje Koriander", "1 zakje Cashewnoten", "250 gr. shi-take"],
+            "image": "../images/recepten/thaise-kip.jpg",
+            "button": "Visgerecht Maken"
+        }
+    ]
+}
